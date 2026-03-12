@@ -65,17 +65,17 @@ A imagem abaixo mostra as **tabelas criadas no MySQL Workbench** após a execuç
 
 As principais entidades do sistema incluem:
 
-* `cliente`
 * `categoria`
-* `produto`
-* `fornecedor`
-* `produto_fornecedor`
+* `cliente`
+* `entrega`
 * `estoque`
-* `produto_estoque`
-* `pedido`
+* `fornecedor`
 * `item_pedido`
 * `pagamento`
-* `entrega`
+* `pedido`
+* `produto`
+* `produto_estoque`
+* `produto_fornecedor`
 
 ---
 
