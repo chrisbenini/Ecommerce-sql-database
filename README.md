@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="recursos/logo/Logo-c.png" width="120">
+  <img src="recursos/logo/Logo-c.png" width="160">
 </p>
 
 <h1 align="center">
@@ -86,11 +86,13 @@ O projeto está organizado em scripts SQL que representam cada etapa da constru�
 ```
 Ecommerce-sql-database
 │
-├── Images
+├── Images/
 │   ├── Diagrama_ecommerce.png
 │   └── Tabelas_ecommerce.png
+│   
+├── recursos/
 │
-├── Sql
+├── Sql/
 │   ├── 01_create_database.sql
 │   ├── 02_create_tables.sql
 │   ├── 03_insert_dados.sql
@@ -166,24 +168,25 @@ SELECT
     pr.nome_produto,
     SUM(ip.quantidade) AS total_vendido
 FROM item_pedido ip
-JOIN produto pr
-ON ip.id_produto = pr.id_produto
-GROUP BY pr.nome_produto
+INNER JOIN produto pr
+    ON ip.id_produto = pr.id_produto
+GROUP BY pr.id_produto, pr.nome_produto
 ORDER BY total_vendido DESC;
 ```
 
 ---
 
-### Faturamento por cliente
+### Faturamento total por cliente
 
 ```sql
 SELECT
     c.nome,
-    SUM(p.valor_total) AS faturamento
+    SUM(p.valor_total) AS faturamento_total
 FROM cliente c
-JOIN pedido p
-ON c.id_cliente = p.id_cliente
-GROUP BY c.nome;
+INNER JOIN pedido p
+    ON c.id_cliente = p.id_cliente
+GROUP BY c.id_cliente, c.nome
+ORDER BY faturamento_total DESC;
 ```
 
 ---
@@ -193,11 +196,15 @@ GROUP BY c.nome;
 ```sql
 SELECT
     pr.nome_produto,
+    e.local_estoque,
     pe.quantidade_disponivel
 FROM produto_estoque pe
-JOIN produto pr
-ON pe.id_produto = pr.id_produto
-WHERE pe.quantidade_disponivel < 15;
+INNER JOIN produto pr
+    ON pe.id_produto = pr.id_produto
+INNER JOIN estoque e
+    ON pe.id_estoque = e.id_estoque
+WHERE pe.quantidade_disponivel < 15
+ORDER BY pe.quantidade_disponivel ASC;
 ```
 
 ---
@@ -221,7 +228,7 @@ Este projeto utiliza conceitos importantes de **banco de dados relacionais**:
 
 # 🚀 Objetivo do Projeto
 
-Este projeto foi desenvolvido como parte de estudos em **engenharia e análise de dados**, com foco em:
+Este projeto foi desenvolvido como parte dos estudos em **Análise de dados**, com foco em:
 
 * modelagem de banco relacional
 * organização de dados comerciais
