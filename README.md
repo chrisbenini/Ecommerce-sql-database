@@ -1,102 +1,116 @@
 <p align="center">
-  <img src="recursos/logo/Logo-c.png" width="160">
+  <img src="recursos/logo/Logo-c.png" width="160" alt="Logo do projeto">
 </p>
-
-<h1 align="center">
-E-commerce SQL Database
-</h1>
 
 <p align="center">
-Projeto de modelagem e implementação de um banco de dados relacional para um sistema de e-commerce utilizando MySQL.
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=E-commerce+SQL+Database;Relational+Modeling+%7C+MySQL+%7C+Queries;Academic+Project+with+Realistic+Business+Scenario" alt="Typing SVG" />
 </p>
 
----
+<h1 align="center">E-commerce SQL Database</h1>
 
 <p align="center">
-  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square&logo=mysql&logoColor=white">
-  <img alt="SQL" src="https://img.shields.io/badge/SQL-Queries-CC2927?style=flat-square&logo=postgresql&logoColor=white">
-  <img alt="MySQL Workbench" src="https://img.shields.io/badge/MySQL%20Workbench-Data%20Modeling-4479A1?style=flat-square&logo=mysql&logoColor=white">
-  <img alt="Relational Database" src="https://img.shields.io/badge/Relational-Database-00618A?style=flat-square">
-  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Version%20Control-181717?style=flat-square&logo=github&logoColor=white">
+Projeto de <b>modelagem e implementação de banco de dados relacional</b> para um sistema de e-commerce, desenvolvido com <b>MySQL</b> como parte de um projeto acadêmico voltado à prática de modelagem, estruturação e consulta de dados.
 </p>
-
----
-
-# 📊 Modelo do Banco de Dados
-
-O banco foi projetado para representar operações reais de um sistema de **e-commerce**, incluindo:
-
-* clientes
-* vendedores parceiros
-* produtos
-* categorias
-* fornecedores
-* estoque
-* pedidos
-* pagamentos
-* entregas
-
-Este modelo simula um ambiente de **marketplace**, onde múltiplos vendedores podem comercializar produtos dentro da plataforma.
-
----
-
-# 🧩 Diagrama Entidade-Relacionamento
-
-A imagem abaixo mostra o **modelo relacional completo do banco**, incluindo as tabelas e seus relacionamentos.
 
 <p align="center">
-  <img src="Images/Diagrama_ecommerce.png" width="800">
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-Queries-CC2927?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img alt="MySQL Workbench" src="https://img.shields.io/badge/MySQL%20Workbench-Data%20Modeling-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img alt="Relational Database" src="https://img.shields.io/badge/Relational-Database-00618A?style=for-the-badge">
+  <img alt="GitHub" src="https://img.shields.io/badge/GitHub-Version%20Control-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
-
-Este diagrama representa:
-
-* relacionamento entre **clientes e pedidos**
-* associação entre **produtos e categorias**
-* controle de **estoque por local**
-* relação **produto-fornecedor**
-* relação **vendedor-produto (marketplace)**
-* fluxo de **pedido → pagamento → entrega**
 
 ---
 
-# 🗂 Estrutura das Tabelas
+## `> overview`
 
-A imagem abaixo mostra as **tabelas criadas no MySQL Workbench** após a execução dos scripts SQL.
+O banco foi projetado para representar operações de um ambiente de **e-commerce / marketplace**, simulando cenários comuns de plataformas digitais com múltiplos vendedores, controle de pedidos, estoque, pagamentos e entregas.
+
+O objetivo do projeto foi aplicar, de forma prática, conceitos de:
+
+- modelagem relacional
+- integridade referencial
+- normalização
+- relacionamentos entre entidades
+- consultas SQL para análise operacional e comercial
+
+---
+
+## `> business_entities`
+
+O modelo contempla as principais entidades de um sistema de e-commerce:
+
+- clientes
+- vendedores parceiros
+- produtos
+- categorias
+- fornecedores
+- estoque
+- pedidos
+- pagamentos
+- entregas
+
+Este cenário simula um ambiente onde **múltiplos vendedores podem comercializar produtos dentro da mesma plataforma**, aproximando o projeto de uma lógica real de marketplace.
+
+---
+
+## `> entity_relationship_diagram`
+
+A imagem abaixo apresenta o **modelo relacional completo do banco**, com suas tabelas e relacionamentos.
 
 <p align="center">
-  <img src="Images/Tabelas_ecommerce.png" width="500">
+  <img src="Images/Diagrama_ecommerce.png" width="850" alt="Diagrama relacional do banco de dados">
 </p>
 
-As principais entidades do sistema incluem:
+### Estrutura representada no diagrama
 
-* `categoria`
-* `cliente`
-* `vendedor`
-* `entrega`
-* `estoque`
-* `fornecedor`
-* `item_pedido`
-* `pagamento`
-* `pedido`
-* `produto`
-* `produto_estoque`
-* `produto_fornecedor`
-* `vendedor_produto`
+- relacionamento entre **clientes e pedidos**
+- associação entre **produtos e categorias**
+- controle de **estoque por local**
+- relação entre **produto e fornecedor**
+- relação entre **vendedor e produto**
+- fluxo de **pedido → pagamento → entrega**
 
 ---
 
-# 📁 Estrutura do Projeto
+## `> physical_structure`
 
-O projeto está organizado em scripts SQL que representam cada etapa da construção do banco.
+A imagem abaixo mostra a estrutura das tabelas após a criação do banco no **MySQL Workbench**.
 
-```
+<p align="center">
+  <img src="Images/Tabelas_ecommerce.png" width="520" alt="Estrutura de tabelas no MySQL Workbench">
+</p>
+
+### Principais tabelas do sistema
+
+- `categoria`
+- `cliente`
+- `vendedor`
+- `entrega`
+- `estoque`
+- `fornecedor`
+- `item_pedido`
+- `pagamento`
+- `pedido`
+- `produto`
+- `produto_estoque`
+- `produto_fornecedor`
+- `vendedor_produto`
+
+---
+
+## `> project_structure`
+
+```text
 Ecommerce-sql-database
 │
 ├── Images/
 │   ├── Diagrama_ecommerce.png
 │   └── Tabelas_ecommerce.png
-│   
+│
 ├── recursos/
+│   └── logo/
+│       └── Logo-c.png
 │
 ├── Sql/
 │   ├── 01_create_database.sql
@@ -109,7 +123,7 @@ Ecommerce-sql-database
 
 ---
 
-# 🧠 Scripts SQL
+> sql_scripts
 
 ### Criação do banco
 
@@ -165,7 +179,7 @@ Contém consultas utilizadas para análise de dados como:
 
 ---
 
-# 🔎 Exemplos de Consultas
+> sample_queries
 
 ### Produtos mais vendidos
 
@@ -215,7 +229,7 @@ ORDER BY pe.quantidade_disponivel ASC;
 
 ---
 
-# 🧠 Conceitos Aplicados
+> concepts_applied
 
 Este projeto utiliza conceitos importantes de **banco de dados relacionais**:
 
@@ -233,7 +247,13 @@ Este projeto utiliza conceitos importantes de **banco de dados relacionais**:
 
 ---
 
-# 🚀 Objetivo do Projeto
+> project_goal
+
+Com a estrutura criada, é possível evoluir o projeto para análises como:
+
+* desempenho de vendas por produto
+* faturamento por cliente
+* 
 
 Este projeto foi desenvolvido como parte dos estudos em **Análise de dados**, com foco em:
 
@@ -242,6 +262,9 @@ Este projeto foi desenvolvido como parte dos estudos em **Análise de dados**, c
 * consultas SQL para análise de vendas e operações
 
 ---
+
+> possible_analysis_scenarios
+
 
 # 👨‍💻 Autor
 
