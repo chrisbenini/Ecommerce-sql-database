@@ -3,11 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="recursos/logo/Logo-c.png" width="150" alt="Logo do projeto">
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Relational+Database+Design;MySQL+%7C+SQL+Queries+%7C+Data+Modeling;Marketplace+Scenario+for+Learning+and+Practice" alt="Typing SVG" />
+  <img src="recursos/logo/Logo-c.png" width="280" alt="Logo do projeto">
 </p>
 
 <p align="center">
