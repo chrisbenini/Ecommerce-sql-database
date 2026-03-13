@@ -110,4 +110,26 @@ CREATE TABLE entrega(
     CONSTRAINT fk_entrega_pedido
         FOREIGN KEY (id_pedido)
         REFERENCES pedido(id_pedido));
+        
+CREATE TABLE vendedor(
+    id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
+    razao_social VARCHAR(150) NOT NULL,
+    nome_fantasia VARCHAR(150),
+    cnpj VARCHAR(18) NOT NULL UNIQUE,
+    email VARCHAR(100),
+    telefone VARCHAR(20));
+
+CREATE TABLE vendedor_produto(
+    id_vendedor_produto INT AUTO_INCREMENT PRIMARY KEY,
+    id_vendedor INT NOT NULL,
+    id_produto INT NOT NULL,
+    preco_praticado DECIMAL(10,2),
+    comissao_percentual DECIMAL(5,2),
+    CONSTRAINT fk_vendedor_produto_vendedor
+        FOREIGN KEY (id_vendedor)
+        REFERENCES vendedor(id_vendedor),
+    CONSTRAINT fk_vendedor_produto_produto
+        FOREIGN KEY (id_produto)
+        REFERENCES produto(id_produto),
+    CONSTRAINT uq_vendedor_produto UNIQUE (id_vendedor, id_produto));
     

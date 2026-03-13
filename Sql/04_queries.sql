@@ -12,7 +12,7 @@ SELECT *
 FROM cliente
 WHERE tipo_cliente = 'PF';
 
--- 5) Listar produtos com preço maior que 500
+-- 5) Lista produtos com preço maior que 500
 SELECT *
 FROM produto
 WHERE preco > 500.00;
@@ -212,7 +212,7 @@ INNER JOIN pedido p
 INNER JOIN cliente c
     ON p.id_cliente = c.id_cliente;
     
--- 25) Classifica produtos por faixa de preço
+-- 26) Classifica produtos por faixa de preço
 SELECT
     nome_produto,
     preco,

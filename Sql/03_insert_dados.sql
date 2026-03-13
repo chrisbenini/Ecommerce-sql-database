@@ -79,3 +79,16 @@ INSERT INTO entrega (id_pedido, status_entrega, codigo_rastreio, transportadora,
 (3, 'Entregue', 'BR323456789', 'Correios', '2024-03-08', '2024-03-10'),
 (4, 'Aguardando pagamento', NULL, NULL, NULL, NULL),
 (5, 'Preparando envio', 'BR523456789', 'Loggi', '2024-03-10', NULL);
+
+INSERT INTO vendedor (razao_social, nome_fantasia, cnpj, email, telefone) VALUES
+('Marketplace Seller One LTDA', 'Seller One', '44.444.444/0001-44', 'contato@sellerone.com', '1160606060'),
+('Loja Tech Parceira LTDA', 'Tech Parceira', '55.555.555/0001-55', 'vendas@techparceira.com', '1170707070'),
+('Comercial Alpha LTDA', 'Alpha Parceira', '11.111.111/0001-11', 'parceiros@alpha.com', '1180808080');
+
+INSERT INTO vendedor_produto (id_vendedor, id_produto, preco_praticado, comissao_percentual) VALUES
+(1, 1, 1949.90, 10.00),
+(1, 3, 159.90, 12.00),
+(2, 2, 4699.90, 8.50),
+(2, 6, 949.90, 7.00),
+(3, 1, 1899.90, 9.00),
+(3, 5, 89.90, 11.00);
