@@ -1,9 +1,5 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:030712,25:0f172a,55:1d4ed8,80:06b6d4,100:67e8f9&text=E-commerce%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&desc=Relational%20Modeling%20%7C%20MySQL%20%7C%20Academic%20Project&descAlignY=60&descSize=18&descColor=e0f2fe&animation=twinkling" />
-</p>
-
-<p align="center">
-  <img src="recursos/logo/Logo-c.png" width="280" alt="Logo do projeto">
+  <img src="recursos/logo/Logo-c.png" width="100%" alt="E-commerce SQL Database Banner">
 </p>
 
 <p align="center">
