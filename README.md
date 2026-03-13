@@ -27,6 +27,7 @@ Projeto de modelagem e implementação de um banco de dados relacional para um s
 O banco foi projetado para representar operações reais de um sistema de **e-commerce**, incluindo:
 
 * clientes
+* vendedores parceiros
 * produtos
 * categorias
 * fornecedores
@@ -34,6 +35,8 @@ O banco foi projetado para representar operações reais de um sistema de **e-co
 * pedidos
 * pagamentos
 * entregas
+
+Este modelo simula um ambiente de **marketplace**, onde múltiplos vendedores podem comercializar produtos dentro da plataforma.
 
 ---
 
@@ -51,6 +54,7 @@ Este diagrama representa:
 * associação entre **produtos e categorias**
 * controle de **estoque por local**
 * relação **produto-fornecedor**
+* relação **vendedor-produto (marketplace)**
 * fluxo de **pedido → pagamento → entrega**
 
 ---
@@ -67,6 +71,7 @@ As principais entidades do sistema incluem:
 
 * `categoria`
 * `cliente`
+* `vendedor`
 * `entrega`
 * `estoque`
 * `fornecedor`
@@ -76,6 +81,7 @@ As principais entidades do sistema incluem:
 * `produto`
 * `produto_estoque`
 * `produto_fornecedor`
+* `vendedor_produto`
 
 ---
 
@@ -217,6 +223,7 @@ Este projeto utiliza conceitos importantes de **banco de dados relacionais**:
 * Normalização
 * Integridade referencial
 * Relacionamentos 1:N
+* Relacionamentos N:N
 * Tabelas associativas
 * JOIN
 * GROUP BY
