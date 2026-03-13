@@ -1,5 +1,13 @@
 <p align="center">
-  <img src="recursos/logo/Logo-c.png" width="100%" alt="E-commerce SQL Database Banner">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:030712,25:0f172a,55:1d4ed8,80:06b6d4,100:67e8f9&text=E-commerce%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&desc=Relational%20Modeling%20%7C%20MySQL%20%7C%20Academic%20Project&descAlignY=60&descSize=18&descColor=e0f2fe&animation=twinkling" />
+</p>
+
+<p align="center">
+  <img src="recursos/logo/Logo-c.png" width="150" alt="Logo do projeto">
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Relational+Database+Design;MySQL+%7C+SQL+Queries+%7C+Data+Modeling;Marketplace+Scenario+for+Learning+and+Practice" alt="Typing SVG" />
 </p>
 
 <p align="center">
