@@ -3,10 +3,6 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Relational+Database+Design;MySQL+%7C+SQL+Queries+%7C+Data+Modeling;Marketplace+Scenario+for+Learning+and+Practice" alt="Typing SVG" />
-</p>
-
-<p align="center">
   Projeto de <b>modelagem e implementação de banco de dados relacional</b> para um sistema de <b>e-commerce</b>, desenvolvido com <b>MySQL</b> como parte de um projeto acadêmico voltado à prática de modelagem, estruturação e consulta de dados.
 </p>
 
