@@ -1,15 +1,17 @@
 <p align="center">
-  <img src="recursos/logo/Logo-c.png" width="160" alt="Logo do projeto">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:030712,25:0f172a,55:1d4ed8,80:06b6d4,100:67e8f9&text=E-commerce%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&desc=Relational%20Modeling%20%7C%20MySQL%20%7C%20Academic%20Project&descAlignY=60&descSize=18&descColor=e0f2fe&animation=twinkling" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=E-commerce+SQL+Database;Relational+Modeling+%7C+MySQL+%7C+Queries;Academic+Project+with+Realistic+Business+Scenario" alt="Typing SVG" />
+  <img src="recursos/logo/Logo-c.png" width="150" alt="Logo do projeto">
 </p>
 
-<h1 align="center">E-commerce SQL Database</h1>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Relational+Database+Design;MySQL+%7C+SQL+Queries+%7C+Data+Modeling;Marketplace+Scenario+for+Learning+and+Practice" alt="Typing SVG" />
+</p>
 
 <p align="center">
-Projeto de <b>modelagem e implementação de banco de dados relacional</b> para um sistema de e-commerce, desenvolvido com <b>MySQL</b> como parte de um projeto acadêmico voltado à prática de modelagem, estruturação e consulta de dados.
+  Projeto de <b>modelagem e implementação de banco de dados relacional</b> para um sistema de <b>e-commerce</b>, desenvolvido com <b>MySQL</b> como parte de um projeto acadêmico voltado à prática de modelagem, estruturação e consulta de dados.
 </p>
 
 <p align="center">
@@ -24,21 +26,24 @@ Projeto de <b>modelagem e implementação de banco de dados relacional</b> para 
 
 ## `> overview`
 
-O banco foi projetado para representar operações de um ambiente de **e-commerce / marketplace**, simulando cenários comuns de plataformas digitais com múltiplos vendedores, controle de pedidos, estoque, pagamentos e entregas.
+Este projeto foi criado para simular a estrutura de um sistema de **e-commerce / marketplace**, aplicando na prática conceitos fundamentais de **banco de dados relacionais**.
 
-O objetivo do projeto foi aplicar, de forma prática, conceitos de:
+O objetivo foi construir um modelo coerente para representar operações comerciais reais, incluindo cadastro de clientes, produtos, vendedores, pedidos, pagamentos, entregas e controle de estoque.
 
-- modelagem relacional
-- integridade referencial
-- normalização
-- relacionamentos entre entidades
-- consultas SQL para análise operacional e comercial
+Além da modelagem, o projeto também contempla a criação de scripts SQL para:
+
+- criação do banco
+- definição das tabelas
+- inserção de dados simulados
+- execução de consultas analíticas
 
 ---
 
-## `> business_entities`
+## `> business_context`
 
-O modelo contempla as principais entidades de um sistema de e-commerce:
+O cenário modelado representa um ambiente de e-commerce com múltiplos vendedores e fluxo completo de operação.
+
+### Entidades contempladas
 
 - clientes
 - vendedores parceiros
@@ -50,35 +55,49 @@ O modelo contempla as principais entidades de um sistema de e-commerce:
 - pagamentos
 - entregas
 
-Este cenário simula um ambiente onde **múltiplos vendedores podem comercializar produtos dentro da mesma plataforma**, aproximando o projeto de uma lógica real de marketplace.
+Esse contexto permite simular uma lógica próxima à de um **marketplace**, onde vários vendedores podem ofertar produtos dentro da mesma plataforma.
+
+---
+
+## `> learning_objectives`
+
+Este projeto foi desenvolvido com foco em consolidar conhecimentos em:
+
+- modelagem relacional
+- normalização
+- integridade referencial
+- criação de tabelas com chaves primárias e estrangeiras
+- relações 1:N e N:N
+- consultas SQL para análise de dados
+- estruturação de um banco voltado a um cenário de negócio
 
 ---
 
 ## `> entity_relationship_diagram`
 
-A imagem abaixo apresenta o **modelo relacional completo do banco**, com suas tabelas e relacionamentos.
+A imagem abaixo apresenta o **modelo relacional completo do banco**, incluindo as entidades e os relacionamentos entre elas.
 
 <p align="center">
-  <img src="Images/Diagrama_ecommerce.png" width="850" alt="Diagrama relacional do banco de dados">
+  <img src="Images/Diagrama_ecommerce.png" width="900" alt="Diagrama relacional do banco de dados">
 </p>
 
-### Estrutura representada no diagrama
+### O diagrama representa
 
 - relacionamento entre **clientes e pedidos**
 - associação entre **produtos e categorias**
 - controle de **estoque por local**
 - relação entre **produto e fornecedor**
 - relação entre **vendedor e produto**
-- fluxo de **pedido → pagamento → entrega**
+- fluxo operacional de **pedido → pagamento → entrega**
 
 ---
 
 ## `> physical_structure`
 
-A imagem abaixo mostra a estrutura das tabelas após a criação do banco no **MySQL Workbench**.
+A imagem abaixo mostra a estrutura física das tabelas após a criação do banco no **MySQL Workbench**.
 
 <p align="center">
-  <img src="Images/Tabelas_ecommerce.png" width="520" alt="Estrutura de tabelas no MySQL Workbench">
+  <img src="Images/Tabelas_ecommerce.png" width="560" alt="Estrutura das tabelas no MySQL Workbench">
 </p>
 
 ### Principais tabelas do sistema
@@ -123,63 +142,68 @@ Ecommerce-sql-database
 
 ---
 
-> sql_scripts
+## `> how_to_run`
 
-### Criação do banco
+### 1. Criar o banco de dados
 
+```sql
+SOURCE Sql/01_create_database.sql;
 ```
-Sql/01_create_database.sql
+
+### 2. Criar as tabelas
+
+```sql
+SOURCE Sql/02_create_tables.sql;
 ```
 
-Responsável pela criação do banco de dados **ecommerce**.
+### 3. Inserir os dados simulados
+
+```sql
+SOURCE Sql/03_insert_dados.sql;
+```
+
+### 4. Executar as consultas
+
+```sql
+SOURCE Sql/04_queries.sql;
+```
+
+> Você também pode abrir os arquivos individualmente no **MySQL Workbench** e executar por etapa.
 
 ---
 
-### Criação das tabelas
+## `> sql_scripts`
 
-```
-Sql/02_create_tables.sql
-```
+### `01_create_database.sql`
+Responsável pela criação do banco de dados `ecommerce`.
 
-Define toda a estrutura do banco:
+### `02_create_tables.sql`
+Define toda a estrutura relacional do projeto, incluindo:
 
-* Primary Keys
-* Foreign Keys
-* Relacionamentos
-* Constraints
+- Primary Keys
+- Foreign Keys
+- constraints
+- relacionamentos entre tabelas
 
----
-
-### Inserção de dados
-
-```
-Sql/03_insert_dados.sql
-```
-
+### `03_insert_dados.sql`
 Insere dados simulados para permitir:
 
-* testes
-* consultas analíticas
-* simulação de operações de e-commerce
+- testes
+- validação do modelo
+- simulação de operações
+- consultas analíticas
+
+### `04_queries.sql`
+Contém consultas SQL voltadas à análise operacional e comercial, como:
+
+- produtos mais vendidos
+- faturamento por cliente
+- controle de estoque
+- pedidos e entregas
 
 ---
 
-### Consultas SQL
-
-```
-Sql/04_queries.sql
-```
-
-Contém consultas utilizadas para análise de dados como:
-
-* produtos mais vendidos
-* faturamento por cliente
-* controle de estoque
-* pedidos e entregas
-
----
-
-> sample_queries
+## `> sample_queries`
 
 ### Produtos mais vendidos
 
@@ -194,8 +218,6 @@ GROUP BY pr.id_produto, pr.nome_produto
 ORDER BY total_vendido DESC;
 ```
 
----
-
 ### Faturamento total por cliente
 
 ```sql
@@ -208,8 +230,6 @@ INNER JOIN pedido p
 GROUP BY c.id_cliente, c.nome
 ORDER BY faturamento_total DESC;
 ```
-
----
 
 ### Produtos com estoque baixo
 
@@ -229,48 +249,58 @@ ORDER BY pe.quantidade_disponivel ASC;
 
 ---
 
-> concepts_applied
+## `> concepts_applied`
 
-Este projeto utiliza conceitos importantes de **banco de dados relacionais**:
+Este projeto aplica conceitos importantes de **banco de dados relacionais**:
 
-* Modelagem de dados
-* Normalização
-* Integridade referencial
-* Relacionamentos 1:N
-* Relacionamentos N:N
-* Tabelas associativas
-* JOIN
-* GROUP BY
-* HAVING
-* ORDER BY
-* Consultas analíticas
-
----
-
-> project_goal
-
-Com a estrutura criada, é possível evoluir o projeto para análises como:
-
-* desempenho de vendas por produto
-* faturamento por cliente
-* 
-
-Este projeto foi desenvolvido como parte dos estudos em **Análise de dados**, com foco em:
-
-* modelagem de banco relacional
-* organização de dados comerciais
-* consultas SQL para análise de vendas e operações
+- modelagem de dados
+- normalização
+- integridade referencial
+- relacionamentos 1:N
+- relacionamentos N:N
+- tabelas associativas
+- `JOIN`
+- `GROUP BY`
+- `HAVING`
+- `ORDER BY`
+- consultas analíticas
 
 ---
 
-> possible_analysis_scenarios
+## `> possible_analysis_scenarios`
 
+Com a estrutura criada, é possível expandir o projeto para análises como:
 
-# 👨‍💻 Autor
+- produtos mais vendidos
+- faturamento por cliente
+- controle de estoque por local
+- pedidos pendentes e entregues
+- análise de relacionamento entre fornecedores e produtos
+- visão operacional do fluxo de vendas
+
+---
+
+## `> project_goal`
+
+Este projeto foi desenvolvido com foco em aprendizado prático e consolidação de fundamentos em:
+
+- modelagem de banco de dados
+- organização de dados comerciais
+- criação de estruturas relacionais
+- consultas SQL para análise de operações
+
+Além do contexto acadêmico, ele também demonstra a aplicação de conceitos úteis em cenários reais de sistemas de marketplace e e-commerce.
+
+---
+
+## `> author`
 
 **Christopher Benini**
 
-Profissional focado em **dados, automação e integrações**, com experiência no desenvolvimento de soluções para análise e transformação de dados.
+Profissional focado em **dados, automação e integrações**, com experiência no desenvolvimento de soluções para análise, transformação e estruturação de dados.
 
-🔗 GitHub
-https://github.com/chrisbenini
+<p>
+  <a href="https://github.com/chrisbenini">
+    <img src="https://img.shields.io/badge/GitHub-chrisbenini-181717?style=for-the-badge&logo=github&logoColor=white">
+  </a>
+</p>
