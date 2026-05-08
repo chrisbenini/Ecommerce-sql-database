@@ -1,14 +1,19 @@
 <p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:030712,25:0f172a,55:1d4ed8,80:06b6d4,100:67e8f9&text=E-commerce%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&animation=twinkling"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,25:0f172a,55:1e3a8a,80:2563eb,100:60a5fa&text=E-commerce%20Database%20Project&fontSize=38&fontColor=f8fafc&fontAlignY=40&desc=SQL%20Modeling%20%7C%20Data%20Architecture%20%7C%20Marketplace%20Simulation&descAlignY=65&descSize=18&descColor=e0f2fe&animation=twinkling"/>
 </p>
 
-<h1 align="center">
-🛒 E-commerce Database Project | SQL na Prática
-</h1>
+<p align="center">
+Projeto prático de <b>Banco de Dados SQL</b> simulando a estrutura real de um
+<b>Marketplace E-commerce</b>, aplicando modelagem relacional,
+normalização e consultas analíticas.
+</p>
 
 <p align="center">
-Simulação completa de um banco de dados de marketplace,
-aplicando modelagem relacional, normalização e consultas SQL para análise de vendas.
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/SQL-Queries-CC2927?style=for-the-badge&logo=postgresql&logoColor=white">
+  <img src="https://img.shields.io/badge/Data%20Modeling-Relational-1E40AF?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Database-Architecture-2563EB?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-1D4ED8?style=for-the-badge">
 </p>
 
 ---
