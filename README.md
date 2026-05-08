@@ -1,10 +1,11 @@
-<p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:030712,25:0f172a,55:1d4ed8,80:06b6d4,100:67e8f9&text=E-commerce%20SQL%20Database&fontSize=38&fontColor=f8fafc&fontAlignY=38&animation=twinkling"/>
-</p>
+<h1 align="center">
+🛒 E-commerce Database Project | SQL na Prática
+</h1>
 
-<h3 align="center">
-Relational Database Modeling • MySQL • SQL Analytics
-</h3>
+<p align="center">
+Simulação completa de um banco de dados de marketplace,
+aplicando modelagem relacional, normalização e consultas SQL para análise de vendas.
+</p>
 
 ---
 
